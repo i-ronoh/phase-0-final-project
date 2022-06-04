@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #928880 0%, #928880 50%, black 50%, black 100%);
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.heading {
+    text-transform: capitalize;
+    color: black;
+    font-size: 40px;
+}
+
+.nav-list {
+    display: flex;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.nav-list > li{
+    width: 50%;
+    list-style: none;
+    padding: 40px;
+    font-size: 20px;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.nav-list a:hover{
+    color: #ffdb58;
+}
+
+.nav-list a:active {
+    color: #273333;
+}
