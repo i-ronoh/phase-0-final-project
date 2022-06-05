@@ -18,6 +18,9 @@ nav{
     height: 8vh;
     position: fixed;
     width: 100%;
+    border-bottom-right-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-bottom: 2px solid #ffdb58;
 }
 
 .heading {
