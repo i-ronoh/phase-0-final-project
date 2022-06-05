@@ -5,11 +5,13 @@
 }
 
 body {
-    background: linear-gradient(to right, #595857 0%, #928880 25%, rgb(30, 29, 29) 50%, black 100%);
+    /* background: linear-gradient(to right, #595857 0%, #928880 25%, rgb(30, 29, 29) 50%, black 100%); */
     font-family: 'ZCOOL XiaoWei', serif;
-    /* background-image: url(../images/bg1.jpg); */
+    background-image: url(../images/bg1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
+    height: 250vh;
     
 }
 
@@ -69,29 +71,21 @@ nav{
     color: #273333;
 }
 
-#backdrop {
-    display: flex;
-    justify-content: flex-end;
-    width: 50%;
-}
-
 /* MAIN SECTION */
 #main {
-    background-image: url(../images/bg1.jpg);
+    /* background-image: url(../images/bg1.jpg); */
     background-size: cover;
     width: 100%;
-    height: 600px;
-    padding-top: 200px;
+    height:65vh;
+    padding-top: 150px;
 }
 
-#main h2{
+#main > h2{
     color: #ffdb58;
     text-align: center;
     text-shadow: #273333;
     font-weight: bolder;
-    box-shadow: inset -3px -3px -3px rgba(255, 255, 255, 0.2);
-;
-font-size: 30px;
+    font-size: 30px;
 }
 
 #main > .maintxt {
@@ -102,11 +96,13 @@ font-size: 30px;
     border-radius: 75px;
     margin-left: 300px;
     border: 3px solid #ffdb58;
+    box-shadow: inset -3px -3px -3px rgba(255, 255, 255, 0.2);
+
 }
 
 
 #main > .maintxt p{
-    color: rgb(235, 230, 230);
+    color: whitesmoke;
     align-items: center;
     line-height: 40px;
     font-size: 25px;
@@ -119,4 +115,109 @@ font-size: 30px;
     color: #ffdb58;
     font-weight: bolder;
     letter-spacing: 1px;
+}
+
+/* MY SOCIALS */
+#footer {
+    /* background-image: url(../images/bg1.jpg); */
+    background-size: cover;
+    width: 100%;
+    height:55vh;
+    padding-top: 150px;
+}
+
+#footer h2{
+    color: #ffdb58;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+#footer > .contactainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 55vh;
+}
+
+#footer > .contactainer ul{
+    position: absolute;
+    display: flex;
+}
+
+#footer > .contactainer ul li{
+    position: relative;
+    list-style: none;
+    margin: 0 20px;
+    cursor: pointer;
+    
+}
+
+#footer > .contactainer ul li a{
+    text-decoration: none;
+}
+
+#footer > .contactainer ul li a .fa{
+    font-size:  3em;
+    color: #222;
+}
+
+#footer > .contactainer ul li::before{
+    font-family: fontAwesome;
+    position: absolute;
+    font-size: 3em;
+    height: 0;
+    overflow: hidden;
+    transition: 1s ease-in-out ;
+}
+
+#footer > .contactainer ul li:nth-child(1):before{
+    content: '\f099';
+    color: #00ACEE;
+    border-bottom: 5px solid #00acee;
+}
+
+#footer > .contactainer ul li:hover::before{
+     height: 100%;
+}
+
+#footer > .contactainer ul li:nth-child(2):before{
+    content: '\f16d';
+    color: #bc2a8d;
+    border-bottom: 5px solid #e95950;
+}
+
+#footer > .contactainer ul li:hover::before{
+     height: 100%;
+}
+
+
+#footer > .contactainer ul li:nth-child(3):before{
+    content: '\f0e1';
+    color: #0072b1;
+    border-bottom: 5px solid #0072b1;
+}
+
+#footer > .contactainer ul li:hover::before{
+    height: 100%;
+}
+
+#footer > .contactainer ul li:nth-child(4):before{
+    content: '\f09b';
+    color: whitesmoke;
+    border-bottom: 5px solid whitesmoke;
+}
+
+#footer > .contactainer ul li:hover::before{
+     height: 100%;
+}
+
+#footer > .contactainer ul li:nth-child(5):before{
+    content: '\f09a';
+    color: #3b5998;
+    border-bottom: 5px solid #3b5998;
+}
+
+#footer > .contactainer ul li:hover::before{
+     height: 100%;
 }
