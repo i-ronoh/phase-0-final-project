@@ -11,27 +11,41 @@ body {
 
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     color: whitesmoke;
+    background-color: black;
+    height: 8vh;
+    position: fixed;
+    width: 100%;
 }
 
 .heading {
     text-transform: capitalize;
-    color: black;
-    font-size: 40px;
+    color: whitesmoke;
+    display: flex;
+    padding-left: 250px;
+   
 }
 
+.heading h1{
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 30px;
+    color: #ffdb58;
+    letter-spacing: 1px;
+}
 .nav-list {
     display: flex;
     letter-spacing: 1px;
     font-weight: bold;
+    margin-right: 250px;
 }
 
 .nav-list > li{
     width: 50%;
     list-style: none;
-    padding: 40px;
+    padding: 10px;
     font-size: 20px;
 }
 
