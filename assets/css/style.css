@@ -11,10 +11,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 250vh;
+    height: 350vh;
     
 }
 
+/* NAVIGATION BAR */
 nav{
     display: flex;
     justify-content: space-between;
@@ -26,7 +27,7 @@ nav{
     width: 100%;
     border-bottom-right-radius: 45px;
     border-bottom-left-radius: 45px;
-    border-bottom: 2px solid #ffdb58;
+    border-bottom: 2px solid rgb(94, 91, 91);
 }
 
 .heading {
@@ -73,11 +74,15 @@ nav{
 
 /* MAIN SECTION */
 #main {
-    /* background-image: url(../images/bg1.jpg); */
+    background-image: url(../images/bg1.jpg);
     background-size: cover;
     width: 100%;
-    height:65vh;
-    padding-top: 150px;
+    padding-top: 100px;
+    border-bottom: 1px solid rgb(94, 91, 91);
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    height: 50vh;
+
 }
 
 #main > h2{
@@ -95,7 +100,7 @@ nav{
 #main > .maintxt img{
     border-radius: 75px;
     margin-left: 300px;
-    border: 3px solid #ffdb58;
+    border: 3px solid rgb(94, 91, 91);
     box-shadow: inset -3px -3px -3px rgba(255, 255, 255, 0.2);
 
 }
@@ -117,7 +122,74 @@ nav{
     letter-spacing: 1px;
 }
 
-/* MY SOCIALS */
+/* CONTACT ME */
+#contact {
+    width: 100%;
+    height:65vh;
+    padding-top: 100px;
+    /* background-image: url(../images/bg1.jpg); */
+    background-size: cover;
+}
+#contact h2{
+    color: #ffdb58;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-top: 0px;
+}
+
+.container {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    /* padding: 3vw 5vw; */
+    width: 50%;
+    /* max-width: 750px; */
+    border-radius: 45px;
+    /*  background-color: black; */
+    /* border: 2px solid #273333; */
+    /* background-image: url(../images/bg1.jpg); */
+    background-size: cover;
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+
+form input, form textarea {
+    border: 0px;
+    margin: 10px 0px;
+    padding: 20px;
+    outline: none;
+    background-color: black;font-size: 20px;
+    font-family: 'ZCOOL XiaoWei', serif;
+    border-radius: 15px;
+    color: whitesmoke;
+}
+
+form button {
+    padding: 15px;
+    cursor: pointer;
+    background-color: black;
+    color: #ffdb58;
+    border: 2px solid #ffdb58;
+    font-size: 20px;
+    width: 250px;
+    border-radius: 15px;
+    font-family: 'ZCOOL XiaoWei', serif;
+    justify-content: center;
+}
+
+.tab{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* FOOTER */
 #footer {
     /* background-image: url(../images/bg1.jpg); */
     background-size: cover;
@@ -133,11 +205,19 @@ nav{
     font-size: 30px;
 }
 
+.connect {
+    color: whitesmoke;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 50px;
+    margin-top: 50px;
+}
+
 #footer > .contactainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 55vh;
+    min-height: 15vh;
 }
 
 #footer > .contactainer ul{
