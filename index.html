@@ -53,11 +53,11 @@
     <section id="contact">
         <h2>CONTACT ME</h2>
         <div class="container">
-            <form action="">
+            <form onsubmit="sendEmail(); reset(); return false;">
                 <input type="text" name="" id="name" placeholder="Your Name" required>
                 <input type="text" name="" id="email" placeholder="Email Address" required>
                 <input type="text" name="" id="phone" placeholder="Phone #" required>
-                <textarea id="name" cols="30" rows="5" placeholder="Drop me some feedback, or say hello! I'm one button click away! "></textarea>
+                <textarea id="feedback" cols="30" rows="5" placeholder="Drop me some feedback, or say hello! I'm one button click away! "></textarea>
                 <span class="tab"><button type="submit">SEND</button>
                 <button type="reset">RESET</button></span>
             </form>
@@ -78,5 +78,8 @@
             </ul>
         </div>
     </section>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
