@@ -7,6 +7,10 @@
 body {
     background: linear-gradient(to right, #595857 0%, #928880 25%, rgb(30, 29, 29) 50%, black 100%);
     font-family: 'ZCOOL XiaoWei', serif;
+    /* background-image: url(../images/bg1.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 nav{
@@ -69,4 +73,50 @@ nav{
     display: flex;
     justify-content: flex-end;
     width: 50%;
+}
+
+/* MAIN SECTION */
+#main {
+    background-image: url(../images/bg1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    padding-top: 200px;
+}
+
+#main h2{
+    color: #ffdb58;
+    text-align: center;
+    text-shadow: #273333;
+    font-weight: bolder;
+    box-shadow: inset -3px -3px -3px rgba(255, 255, 255, 0.2);
+;
+font-size: 30px;
+}
+
+#main > .maintxt {
+    display: flex;
+}
+
+#main > .maintxt img{
+    border-radius: 75px;
+    margin-left: 300px;
+    border: 3px solid #ffdb58;
+}
+
+
+#main > .maintxt p{
+    color: rgb(235, 230, 230);
+    align-items: center;
+    line-height: 40px;
+    font-size: 25px;
+    text-align: justify;
+    padding-top: 50px;
+    padding-left: 150px;
+}
+
+#main > .maintxt p .mustard{
+    color: #ffdb58;
+    font-weight: bolder;
+    letter-spacing: 1px;
 }
