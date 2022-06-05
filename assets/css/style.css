@@ -7,11 +7,11 @@
 body {
     /* background: linear-gradient(to right, #595857 0%, #928880 25%, rgb(30, 29, 29) 50%, black 100%); */
     font-family: 'ZCOOL XiaoWei', serif;
-    background-image: url(../images/bg1.jpg);
+    /* background-image: url(../images/backdrop.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 350vh;
+    height: 200vh;
     
 }
 
@@ -42,7 +42,7 @@ nav{
     padding-top: 10px;
     padding-left: 10px;
     font-size: 30px;
-    color: #ffdb58;
+    color: rgba(252,193,47,255);
     letter-spacing: 1px;
 }
 .nav-list {
@@ -65,32 +65,38 @@ nav{
 }
 
 .nav-list a:hover{
-    color: #ffdb58;
+    color: rgba(253,193,47,255);
 }
 
 .nav-list a:active {
     color: #273333;
 }
 
+/* HEADER */
+#headerr {
+
+}
+
 /* MAIN SECTION */
 #main {
-    background-image: url(../images/bg1.jpg);
+    background-image: url(../images/wow.webp);
     background-size: cover;
     width: 100%;
     padding-top: 100px;
     border-bottom: 1px solid rgb(94, 91, 91);
     border-bottom-left-radius: 45px;
     border-bottom-right-radius: 45px;
-    height: 50vh;
+    height: 200vh;
 
 }
 
 #main > h2{
-    color: #ffdb58;
+    color: rgba(253,193,47,255);
     text-align: center;
     text-shadow: #273333;
     font-weight: bolder;
     font-size: 30px;
+    margin-top: 50px;
 }
 
 #main > .maintxt {
@@ -117,7 +123,7 @@ nav{
 }
 
 #main > .maintxt p .mustard{
-    color: #ffdb58;
+    color: rgba(253,193,47,255);
     font-weight: bolder;
     letter-spacing: 1px;
 }
@@ -126,21 +132,21 @@ nav{
 #contact {
     width: 100%;
     height:65vh;
-    padding-top: 100px;
+    padding-top: 150px;
     /* background-image: url(../images/bg1.jpg); */
     background-size: cover;
 }
 #contact h2{
-    color: #ffdb58;
+    color: rgba(253,193,47,255);
     text-align: center;
     font-weight: bolder;
     font-size: 30px;
-    margin-top: 0px;
+    margin-top: 50px;
 }
 
 .container {
     width: 100%;
-    height: 60vh;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -175,8 +181,8 @@ form button {
     padding: 15px;
     cursor: pointer;
     background-color: black;
-    color: #ffdb58;
-    border: 2px solid #ffdb58;
+    color: rgba(253,193,47,255);
+    border: 2px solid rgba(253,193,47,255);
     font-size: 20px;
     width: 250px;
     border-radius: 15px;
@@ -195,11 +201,11 @@ form button {
     background-size: cover;
     width: 100%;
     height:55vh;
-    padding-top: 150px;
+    padding-top: 100px;
 }
 
 #footer h2{
-    color: #ffdb58;
+    color: rgba(253,193,47,255);
     text-align: center;
     font-weight: bolder;
     font-size: 30px;

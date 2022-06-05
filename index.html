@@ -31,6 +31,14 @@
         </ul>
     </nav>
     
+    <!-- HERO SECTION -->
+    
+        <section id="headerr">
+            <div class="hero"></div>
+                <!-- <img src="./assets/images/wow.webp" alt="hero" width="2000px" height="1000px"> -->
+                <h1 class="Bulletin">Ivy Ronoh</h1>
+        </section>
+    
     
     <!-- MAIN SECTION -->
     <section id="main">
@@ -53,11 +61,12 @@
     <section id="contact">
         <h2>CONTACT ME</h2>
         <div class="container">
-            <form onsubmit="sendEmail(); reset(); return false;">
-                <input type="text" name="" id="name" placeholder="Your Name" required>
-                <input type="text" name="" id="email" placeholder="Email Address" required>
-                <input type="text" name="" id="phone" placeholder="Phone #" required>
-                <textarea id="feedback" cols="30" rows="5" placeholder="Drop me some feedback, or say hello! I'm one button click away! "></textarea>
+            <!-- <form onsubmit="sendEmail(); reset(); return false;"> -->
+            <form action="https://formspree.io/f/mzbowbdk" method="post">
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+                <input type="email" name="email" id="email" placeholder="Email Address" required>
+                <input type="text" name="phone" id="phone" placeholder="Phone #" required>
+                <textarea name="message" id="feedback" cols="30" rows="5" placeholder="Drop me some feedback, or say hello! I'm one button click away! "></textarea>
                 <span class="tab"><button type="submit">SEND</button>
                 <button type="reset">RESET</button></span>
             </form>
@@ -81,5 +90,7 @@
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
