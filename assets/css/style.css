@@ -5,7 +5,8 @@
 }
 
 body {
-    background: linear-gradient(to right, #928880 0%, #928880 50%, black 50%, black 100%);
+    background: linear-gradient(to right, #595857 0%, #928880 25%, rgb(30, 29, 29) 50%, black 100%);
+    font-family: 'ZCOOL XiaoWei', serif;
 }
 
 nav{
@@ -45,4 +46,10 @@ nav{
 
 .nav-list a:active {
     color: #273333;
+}
+
+#backdrop {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
 }
