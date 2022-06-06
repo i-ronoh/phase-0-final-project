@@ -5,15 +5,15 @@
 }
 
 body {
-    /* background: linear-gradient(to right, #595857 0%, #928880 25%, rgb(30, 29, 29) 50%, black 100%); */
     font-family: 'ZCOOL XiaoWei', serif;
-    /* background-image: url(../images/backdrop.jpg); */
+    /* background-image: url(../images/spla.webp); */
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 200vh;
     
 }
+
 
 /* NAVIGATION BAR */
 nav{
@@ -22,7 +22,7 @@ nav{
     align-items: center;
     color: whitesmoke;
     background-color: black;
-    height: 8vh;
+    height: 5rem;
     position: fixed;
     width: 100%;
     border-bottom-right-radius: 45px;
@@ -73,57 +73,126 @@ nav{
 }
 
 /* HEADER */
-#headerr {
 
+#home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/spla.webp);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero {
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #595857 0%, #928880 25%, rgb(30, 29, 29) 50%, black 100%); */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 30%;
+    height: 480px;
+    margin-top: 350px;
+    /* background: #141414; */
+}
+
+.Bulletin {
+    position: relative;
+    top: 30%;
+    left: 10%;
+    font-size: 105px;
+    letter-spacing: 2px;
+    text-align: center;
+    transform: translate(-10%, -70%);
+    color: rgb(147, 100, 14);
+    z-index: 1;
+}
+
+.btn{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'ZCOOL XiaoWei', serif;
+    margin-top: 50px;
+    margin-left: 145px;
+    padding: 30px;
+    width: 250px;
+    background-color: black;
+    color: rgb(238, 167, 35);
+    border: 2px solid rgb(238, 167, 35);
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    z-index: 1;
+
+}
+.btn a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.btn a:hover {
+    color: rgb(238, 167, 35);
 }
 
 /* MAIN SECTION */
-#main {
-    background-image: url(../images/wow.webp);
+#about {
+    background-image: url(../images/this.jpg);
     background-size: cover;
     width: 100%;
-    padding-top: 100px;
-    border-bottom: 1px solid rgb(94, 91, 91);
     border-bottom-left-radius: 45px;
     border-bottom-right-radius: 45px;
-    height: 200vh;
+    height: 100vh;
+    
 
 }
 
-#main > h2{
-    color: rgba(253,193,47,255);
+#about > .maintxt h2{
+    color: black;
     text-align: center;
-    text-shadow: #273333;
-    font-weight: bolder;
-    font-size: 30px;
+    font-size: 35px;
+    padding-top: 50px;
     margin-top: 50px;
+    padding-bottom: 50px;
 }
 
-#main > .maintxt {
+#about > .maintxt {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+
+    /* align-items: center; */
+}
+
+.flexx{
     display: flex;
 }
-
-#main > .maintxt img{
-    border-radius: 75px;
-    margin-left: 300px;
+#about > .maintxt img{
+    border-radius:75px;
+    margin-left: 100px;
     border: 3px solid rgb(94, 91, 91);
-    box-shadow: inset -3px -3px -3px rgba(255, 255, 255, 0.2);
-
 }
 
 
-#main > .maintxt p{
-    color: whitesmoke;
+#about > .maintxt p{
+    color: rgba(151, 99, 4, 0.835);
     align-items: center;
-    line-height: 40px;
-    font-size: 25px;
-    text-align: justify;
+    line-height: 60px;
+    font-size: 35px;
     padding-top: 50px;
     padding-left: 150px;
+    font-weight: bolder;;
 }
 
-#main > .maintxt p .mustard{
-    color: rgba(253,193,47,255);
+#about > .maintxt p .mustard{
+    color: black;
     font-weight: bolder;
     letter-spacing: 1px;
 }
@@ -131,22 +200,25 @@ nav{
 /* CONTACT ME */
 #contact {
     width: 100%;
-    height:65vh;
-    padding-top: 150px;
-    /* background-image: url(../images/bg1.jpg); */
+    height:100vh;
+    background-image: url(../images/splash.jpg);
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
 }
 #contact h2{
-    color: rgba(253,193,47,255);
+    color: black;
     text-align: center;
     font-weight: bolder;
     font-size: 30px;
-    margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 .container {
     width: 100%;
-    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -169,7 +241,7 @@ form {
 form input, form textarea {
     border: 0px;
     margin: 10px 0px;
-    padding: 20px;
+    padding: 30px;
     outline: none;
     background-color: black;font-size: 20px;
     font-family: 'ZCOOL XiaoWei', serif;
@@ -178,16 +250,17 @@ form input, form textarea {
 }
 
 form button {
-    padding: 15px;
+    padding: 25px;
     cursor: pointer;
     background-color: black;
     color: rgba(253,193,47,255);
     border: 2px solid rgba(253,193,47,255);
-    font-size: 20px;
+    font-size: 25px;
     width: 250px;
     border-radius: 15px;
     font-family: 'ZCOOL XiaoWei', serif;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .tab{
@@ -197,11 +270,13 @@ form button {
 
 /* FOOTER */
 #footer {
-    /* background-image: url(../images/bg1.jpg); */
+    background-image: url(../images/footr.jpg);
     background-size: cover;
     width: 100%;
-    height:55vh;
+    height:100vh;
     padding-top: 100px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 #footer h2{
@@ -209,11 +284,12 @@ form button {
     text-align: center;
     font-weight: bolder;
     font-size: 30px;
+    padding-bottom: 50px;
 }
 
 .connect {
     color: whitesmoke;
-    font-size: 25px;
+    font-size: 35px;
     text-align: center;
     padding-top: 50px;
     margin-top: 50px;
@@ -223,7 +299,8 @@ form button {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 15vh;
+    width: 100%;
+    margin-top: 200px;
 }
 
 #footer > .contactainer ul{
@@ -234,7 +311,7 @@ form button {
 #footer > .contactainer ul li{
     position: relative;
     list-style: none;
-    margin: 0 20px;
+    margin: 0 30px;
     cursor: pointer;
     
 }
@@ -244,14 +321,14 @@ form button {
 }
 
 #footer > .contactainer ul li a .fa{
-    font-size:  3em;
+    font-size:  7em;
     color: #222;
 }
 
 #footer > .contactainer ul li::before{
     font-family: fontAwesome;
     position: absolute;
-    font-size: 3em;
+    font-size: 7em;
     height: 0;
     overflow: hidden;
     transition: 1s ease-in-out ;
@@ -260,7 +337,7 @@ form button {
 #footer > .contactainer ul li:nth-child(1):before{
     content: '\f099';
     color: #00ACEE;
-    border-bottom: 5px solid #00acee;
+    border-bottom: 15px solid #00acee;
 }
 
 #footer > .contactainer ul li:hover::before{
@@ -270,7 +347,7 @@ form button {
 #footer > .contactainer ul li:nth-child(2):before{
     content: '\f16d';
     color: #bc2a8d;
-    border-bottom: 5px solid #e95950;
+    border-bottom: 15px solid #e95950;
 }
 
 #footer > .contactainer ul li:hover::before{
@@ -281,7 +358,7 @@ form button {
 #footer > .contactainer ul li:nth-child(3):before{
     content: '\f0e1';
     color: #0072b1;
-    border-bottom: 5px solid #0072b1;
+    border-bottom: 15px solid #0072b1;
 }
 
 #footer > .contactainer ul li:hover::before{
@@ -291,7 +368,7 @@ form button {
 #footer > .contactainer ul li:nth-child(4):before{
     content: '\f09b';
     color: whitesmoke;
-    border-bottom: 5px solid whitesmoke;
+    border-bottom: 15px solid whitesmoke;
 }
 
 #footer > .contactainer ul li:hover::before{
@@ -301,9 +378,20 @@ form button {
 #footer > .contactainer ul li:nth-child(5):before{
     content: '\f09a';
     color: #3b5998;
-    border-bottom: 5px solid #3b5998;
+    border-bottom: 15px solid #3b5998;
 }
 
 #footer > .contactainer ul li:hover::before{
      height: 100%;
+}
+
+.footr{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 20px;
+    color: antiquewhite;
+    font-weight: bolder;
+    margin-bottom: 0px;
+    margin-top: 360px;
 }
