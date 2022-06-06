@@ -1,123 +1,80 @@
-# Project: Build a Personal Website
+# Phase-0-Final-Project: 
+Ivy Ronoh Portfolio
 
-## Learning Goals
+# AUTHOR
+Ivy Ronoh
 
-- Build a website using HTML, CSS and JavaScript
-- Publish a website
+## Screenshots
+![Splash Screen](assets/images/README%20assets/landing1.png)
+![About Me](assets/images/README%20assets/landing2.png)
+![Contact Me](assets/images/README%20assets/Contact%20Me.png)
+![Lets Connect](assets/images/README%20assets/Socials.png)
 
-## Introduction
+## Description
+This is my final solo project for Phase-0 of my Moringa School Software Engineering journey. It is a simple dynamic website that showcases my portfolio. Made using HTML, CSS and JavaScript. 
 
-You've been learning HTML, CSS, and JavaScript over the previous lessons. You've
-been receiving specific guidance ("Use a `<link>` tag!") and have been steered
-by our documentation or tests. In an effort to help you build your confidence,
-we're going to give you _nothing_ except some specifications and leave the
-document structure and styling _to you_. It's time to tie all your learning
-together into one project. You must create...
+Feel free to engage me through the contact links within my personal website.
 
-..._a personal website_!
+# Getting Started
 
-Professional software engineers and web developers often have a personal
-website. In some ways, it is the industry's alternative to a business card. A
-personal website can showcase your abilities while also giving visitors a sense
-of your personality.
+Building your own personal website from this project can take as little as 30 minutes. Follow the setup instructions below. Please feel free to reach out to me by filing an [issue](https://github.com/hashirshoaeb/portfolio/issues) or emailing me at hashirshoaeb@gmail.com for help configuring your project.
 
-## Requirements
+## Prerequisites
 
-This project is an opportunity to showcase what you've learned so far, so it is
-important that HTML, CSS, and JavaScript are incorporated into the project in
-some way. For example, you could use a `mouseover` event to change the
-appearance of an element when the user mouses over it. Or use a `click` event to
-toggle some content between being visible and hidden. There are a variety of
-ways to do this using the CSS and JavaScript you've learned so far, but don't
-forget you can always use Google if you get stuck. Google is an invaluable tool
-for developers! Try to use this project as an opportunity to stretch your coding
-skills!
+You should have [Nodejs](https://nodejs.org/en/) and [Git](https://git-scm.com/downloads) installed on your PC. You should also own a GitHub account.
 
-The content, styling, and functionality of your site are up to you. Keep in mind
-that you may show this project to your peers and future instructors, so be
-considerate of content/subject matter and your potential audience.
+## Setup
 
-## Getting Started and a Recommended Workflow
+1. Fork this repoistory and clone it to your local machine.
+    ```sh
+      git clone https://github.com/<your-username>/portfolio.git
+    ``` 
 
-In the previous two lessons, you:
+2. Edit the [config/config.js](https://github.com/hashirshoaeb/portfolio/blob/main/config/config.js) file. Replace [config/profile.png](https://github.com/hashirshoaeb/portfolio/blob/main/config/profile.png) with your image. 
+    >Note: You need to rename your image file as `profile.png`.
+3. Run following scripts in terminal/command prompt to install dependencies.
+    ```sh
+      npm install
+      npm run build
+    ```
+## Testing
 
-- Created local and remote repos for your project and connected them together
-- Created the base files for your project: `README.md`, `index.html`,
-  `style.css`, and `index.js`
-- Published your new site on GitHub Pages.
+1. To test on your local server, run the following command:
+    ```sh
+      npm run dev
+    ```
 
-With all of this in place, you are ready to start working on the _content_,
-_styles_, and _behavior_ you want your site to have. Because your site is
-published on GitHub Pages, you'll be able to continuously push updates to your
-site _as you build it_.
+2. Open the browser to http://localhost:3000/
 
-In general, when it comes to building code-related projects, it is often best to
-establish a routine of making small improvements, checking to make sure those
-improvements work and don't break things. This routine might look something like
-the following:
+## Deployment
 
-1) Write some HTML, CSS or JavaScript
-2) Go to your browser and refresh the page to see the changes
-3) Adjust your code and repeat until you're satisfied
-4) Move on to the next task and repeat the process
+If it works locally, you can deploy your project to GitHub Pages. GitHub Pages provides two types of free domains, `<username>.github.io` and `<username>.github.io/<repository>`. You can choose the one that suits your needs. You can learn more about domain types from [here](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#types-of-github-pages-sites).
 
-It is very common to get lost in coding and to keep going from one task to the
-next without checking your work. The problem here is that if you make a mistake
-it becomes more and more difficult to spot and debug the error.
+### Deploy to \<your-username>.github.io/portfolio
 
-By frequently checking your work, you'll set your own project milestones — at
-each one, you can verify everything is working so when you _do_ make a mistake,
-you'll know it was made recently.
+Simply you just need to commit and push your changes to github. And [GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/introduction-to-github-actions#overview) will take care of the deployment. Your site will be available at `https://<your-username>.github.io/portfolio`
 
-## Professional Git Development Workflow
+### Deploy to \<your-username>.github.io
 
-When it comes to Git, there is ultimately no rule that says you _must_ do things
-a certain way. However, if there was anything we could impart to you regarding
-good version control habits, it would be this — commit code frequently.
+Create a new repository with your username as `<your-username>.github.io`. And let the following command do the job for you.
 
-As mentioned, it is a common habit to dive into the code of a project and write
-as much as you can, for as long as you can. However, not only does this increase
-the chance for bugs, it will result in very large Git commits or just _one_ big
-commit for everything.
+```sh
+  npm run predeploy
+  node scripts/pages.js <your-username> master
+```
 
-Repositories with a good commit history can relay a story about their
-development from just the commit messages alone. For example, instead of the
-commit history looking like this:
+Your site will be available at `https://<your-username>.github.io`
 
-- Commit 1: "Initialize Repository"
-- Commit 2: "Finish website"
+>Note: You need to replace `<your-username>` with your username. To add CNAME for custom domain, see [scripts/cname.js](https://github.com/hashirshoaeb/portfolio/blob/main/scripts/cname.js)
 
-A good history might look closer to this:
 
-- Commit 1: "Initialize Repository"
-- Commit 2: "Add basic HTML, CSS and JavaScript files"
-- Commit 3: "Create initial HTML content"
-- Commit 4: "Add CSS rules"
-- Commit 5: "Fix syntax issue in HTML"
-- Commit 6: "Finish bio/about section"
-- Commit 7: "Add JS event listeners"
-- etc...
-- Commit 22: "Adjust styling for new HTML layout"
-- Commit 23: "Finish website"
+# Contributing
 
-The commit messages here suggest that each commit above addressed a small, often
-_singular_ task.
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contribution you make would be **appreciated**.
 
-Good commit practices are critical for large companies and organizations where
-many developers are working on large code-bases — in these cases, limiting
-the size of commits makes it easier for others to understand what changes the
-commit brings. If a commit introduces a bug into the code base, it is fairly
-easy to revert a _small_ commit. A big commit, on the other hand, may require
-lots of extra work to untangle and fix.
-
-For personal development, though, the same concerns apply. In addition, when you
-start building more complex projects, you may find yourself in situations where
-you'd like to go back to an earlier version of a project. Taking the time now to
-build good habits will help you many times over in the future. Think of good
-version control habits as a favor to your future self!
-
-## Conclusion
-
-Once you've finished building your website, make sure to push it all up to
-GitHub. If you followed our advice and set up GitHub Pages first, you've now
-successfully built _and_ published a website! Fantastic work!
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+:-)
