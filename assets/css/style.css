@@ -140,7 +140,7 @@ nav{
 
 /* MAIN SECTION */
 #about {
-    background-image: url(../images/this.jpg);
+    background-image: url(../images/better.jpeg);
     background-size: cover;
     width: 100%;
     border-bottom-left-radius: 45px;
@@ -182,7 +182,7 @@ nav{
 
 
 #about > .maintxt p{
-    color: rgba(151, 99, 4, 0.835);
+    color: black;
     align-items: center;
     line-height: 60px;
     font-size: 35px;
@@ -192,7 +192,7 @@ nav{
 }
 
 #about > .maintxt p .mustard{
-    color: black;
+    color: rgb(170, 117, 17);
     font-weight: bolder;
     letter-spacing: 1px;
 }
