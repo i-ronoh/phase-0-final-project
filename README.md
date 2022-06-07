@@ -17,7 +17,7 @@ Feel free to engage me through the contact links within my personal website.
 
 # Getting Started
 
-Building your own personal website from this project can take as little as 30 minutes. Follow the setup instructions below. Please feel free to reach out to me by filing an [issue](https://github.com/hashirshoaeb/portfolio/issues) or emailing me at hashirshoaeb@gmail.com for help configuring your project.
+Building your own personal website from this project can take as little as 30 minutes. Follow the setup instructions below. Please feel free to reach out to me by filing an [issue](https://github.com/hashirshoaeb/portfolio/issues) or emailing me at ronoh.ivy@gmail.com for help configuring your project.
 
 ## Prerequisites
 
